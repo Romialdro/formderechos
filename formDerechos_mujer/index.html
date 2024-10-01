@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Eventos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Lista de Eventos</h1>
+        <ul id="eventList" class="list-group"></ul>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // Cargar solo los eventos al inicio, sin opciones de edición/eliminación ya que será público
+        document.addEventListener('DOMContentLoaded', loadEvents);
+    </script>
+</body>
+</html>

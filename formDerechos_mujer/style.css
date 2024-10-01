@@ -1,0 +1,36 @@
+/* styles.css */
+body {
+    background-color: #f8f9fa;
+}
+
+#eventList {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.list-group-item {
+    display: flex;
+    flex-direction: column;
+}
+
+input[readonly], textarea[readonly] {
+    background-color: #e9ecef;
+    border: none;
+    resize: none;
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+
+button.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 5px;
+    border-radius: 5px;
+}

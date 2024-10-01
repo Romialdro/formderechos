@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Eventos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Administración de Eventos</h1>
+        
+        <!-- Formulario para agregar eventos -->
+        <form id="eventForm" class="mb-4">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="eventTitle">Título del evento</label>
+                    <input type="text" class="form-control" id="eventTitle" placeholder="Título del evento" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="eventDate">Fecha y Hora</label>
+                    <input type="datetime-local" class="form-control" id="eventDate" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="eventPlace">Lugar</label>
+                    <input type="text" class="form-control" id="eventPlace" placeholder="Lugar del evento" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="eventDescription">Descripción</label>
+                    <textarea class="form-control" id="eventDescription" placeholder="Descripción del evento" required></textarea>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-block" onclick="addEvent()">Agregar Evento</button>
+        </form>
+        
+        <ul id="eventList" class="list-group"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
